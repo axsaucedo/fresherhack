@@ -70,11 +70,11 @@
 		// 	$('#photos-wrapper').css('margin-left', parallaxAndroid/4);
 		// }
 
-		var parallaxPrizes = (heightPrize - (60+height + offsetPrizes - scrolled))/12;
+		var parallaxPrizes = (heightPrize - (60+height + offsetPrizes - scrolled))/6;
 		if (parallaxPrizes > 0) {
 			console.log("Prizes parallax: " + parallaxPrizes, heightPrize);
 			$('#left-image').css('top', -parallaxPrizes+'px');
-			$('#right-image').css('top', -parallaxPrizes+'px');
+			$('#right-image').css('top', -parallaxPrizes-100+'px');
 			return;
 		}
 	}
